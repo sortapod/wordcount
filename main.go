@@ -16,11 +16,9 @@ func main() {
 // consequitive separators counts as one
 func countWords(src string, wordSep ...string) int {
 	ws := map[string]struct{}{}
-	for _, sep := range  wordSep {
-		ws[sep] = struct{}{}
-	}
+
 	if len(wordSep) > 0 {
-	        for _, sep := range  wordSep {
+	        for _, sep := range wordSep {
 		        ws[sep] = struct{}{}
 	        }
 	}else {
